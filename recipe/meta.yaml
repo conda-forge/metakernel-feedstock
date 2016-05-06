@@ -1,4 +1,4 @@
-{% set version = "0.12.4" %}
+{% set version = "0.12.6" %}
 
 package:
     name: metakernel
@@ -6,8 +6,8 @@ package:
 
 source:
     fn: metakernel-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/m/metakernel/metakernel-{{ version }}.tar.gz
-    md5: 29ef29d9bd831a9b6f358f90a200834f
+    url: https://pypi.io/packages/source/m/metakernel/metakernel-{{ version }}.tar.gz
+    sha256: 8de57c4419f125c8de6aa74cb09f346220d1e595ba09e20070f2640798d88d98
 
 build:
     number: 0
@@ -17,10 +17,12 @@ requirements:
     build:
         - python
         - setuptools
-        - ipython >=3.0
+        - jupyter
+        - gnureadline  # [osx]
     run:
         - python
-        - ipython >=3.0
+        - jupyter
+        - gnureadline  # [osx]
 
 test:
     imports:
@@ -32,7 +34,7 @@ test:
 
 about:
     home: https://github.com/Calysto/metakernel
-    license: BSD-3-Clause
+    license: BSD 3-Clause
     summary: Metakernel for Jupyter
 
 extra:
