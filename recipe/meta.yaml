@@ -1,4 +1,4 @@
-{% set version = "0.12.6" %}
+{% set version = "0.13.1" %}
 
 package:
     name: metakernel
@@ -7,7 +7,7 @@ package:
 source:
     fn: metakernel-{{ version }}.tar.gz
     url: https://pypi.io/packages/source/m/metakernel/metakernel-{{ version }}.tar.gz
-    sha256: 8de57c4419f125c8de6aa74cb09f346220d1e595ba09e20070f2640798d88d98
+    sha256: dda485e72f54fa28f5d73256b3ec87e7bdd0fd2b78ebe0ce0acb46075c710206
 
 build:
     number: 0
@@ -17,8 +17,6 @@ requirements:
     build:
         - python
         - setuptools
-        - jupyter
-        - gnureadline  # [osx]
     run:
         - python
         - jupyter
