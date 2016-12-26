@@ -10,7 +10,7 @@ source:
     sha256: bfd3fcd0b996f2179b09eec6a473add232a46172fe214017614e92a3b69f0c0b
 
 build:
-    number: 0
+    number: 1
     script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -20,6 +20,7 @@ requirements:
     run:
         - python
         - jupyter
+        - pexpect >=4.2
         - gnureadline  # [osx]
 
 test:
