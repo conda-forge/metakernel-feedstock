@@ -1,4 +1,4 @@
-{% set version = "0.16.3" %}
+{% set version = "0.17.0" %}
 
 package:
     name: metakernel
@@ -7,10 +7,10 @@ package:
 source:
     fn: metakernel-{{ version }}.tar.gz
     url: https://pypi.io/packages/source/m/metakernel/metakernel-{{ version }}.tar.gz
-    sha256: bfd3fcd0b996f2179b09eec6a473add232a46172fe214017614e92a3b69f0c0b
+    sha256: 203f3e4db984dce5dd4d8aa53dfa84ba230ff12762dc4cf4c3a3f0924e859a4e
 
 build:
-    number: 1
+    number: 0
     script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
