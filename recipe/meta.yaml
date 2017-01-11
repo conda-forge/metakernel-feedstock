@@ -19,7 +19,7 @@ requirements:
     - setuptools
   run:
     - python
-    - jupyter
+    - ipykernel
     - pexpect >=4.2
     - gnureadline  # [osx]
 
