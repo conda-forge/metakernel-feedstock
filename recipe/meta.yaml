@@ -1,45 +1,45 @@
 {% set version = "0.17.4" %}
 
 package:
-    name: metakernel
-    version: {{ version }}
+  name: metakernel
+  version: {{ version }}
 
 source:
-    fn: metakernel-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/m/metakernel/metakernel-{{ version }}.tar.gz
-    sha256: d7e07706144d0705de7426cd282a426cecfddcb65b5231ab04287a53b5edc35e
+  fn: metakernel-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/m/metakernel/metakernel-{{ version }}.tar.gz
+  sha256: d7e07706144d0705de7426cd282a426cecfddcb65b5231ab04287a53b5edc35e
 
 build:
-    number: 0
-    script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
-    build:
-        - python
-        - setuptools
-    run:
-        - python
-        - jupyter
-        - pexpect >=4.2
-        - gnureadline  # [osx]
+  build:
+    - python
+    - setuptools
+  run:
+    - python
+    - jupyter
+    - pexpect >=4.2
+    - gnureadline  # [osx]
 
 test:
-    imports:
-        - metakernel
-        - metakernel.magics
-        - metakernel.magics.tests
-        - metakernel.tests
-        - metakernel.utils
+  imports:
+    - metakernel
+    - metakernel.magics
+    - metakernel.magics.tests
+    - metakernel.tests
+    - metakernel.utils
 
 about:
-    home: https://github.com/Calysto/metakernel
-    license: BSD 3-Clause
-    summary: 'Metakernel for Jupyter.'
+  home: https://github.com/Calysto/metakernel
+  license: BSD 3-Clause
+  summary: 'Metakernel for Jupyter.'
 
 extra:
-    recipe-maintainers:
-        - ocefpaf
-        - ericdill
-        - mariusvniekerk
-        - blink1073
-        - dsblank
+  recipe-maintainers:
+    - ocefpaf
+    - ericdill
+    - mariusvniekerk
+    - blink1073
+    - dsblank
