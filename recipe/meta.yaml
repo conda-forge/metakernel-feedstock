@@ -7,7 +7,7 @@ package:
 source:
   fn: metakernel-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/m/metakernel/metakernel-{{ version }}.tar.gz
-  sha256: 0f8ac10bb9c70df7866abe41a059aeebe5ea76e4bce99b8fb83c555efa515d21
+  sha256: 1c5ffb75aa020953d30513ebd69396d22f9f105ba88538ccf9a2c8feab6f2cab
 
 build:
   number: 0
