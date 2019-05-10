@@ -1,4 +1,4 @@
-{% set version = "0.22.1" %}
+{% set version = "0.23.0" %}
 
 package:
   name: metakernel
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/metakernel/metakernel-{{ version }}.tar.gz
-  sha256: 6fb9106335271290296ba7b9e3ac4fcafd57798103b1a7f8a641366a868fcb4b
+  sha256: 42294dae60e336d665c297d5fdecc286152ae8070da67c8dae88d57da1a90dd2
 
 build:
   number: 0
