@@ -9,7 +9,7 @@ source:
   sha256: 0f37bc393dc4e4a21d4d5a3c0ea560c472953a415de96b98e142feecd8a31498
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -20,6 +20,7 @@ requirements:
   run:
     - python
     - ipykernel
+    - ipyparallel
     - pexpect >=4.2
 
 test:
