@@ -22,6 +22,7 @@ requirements:
     - ipykernel
     - ipyparallel
     - pexpect >=4.2
+    - portalocker
 
 test:
   imports:
