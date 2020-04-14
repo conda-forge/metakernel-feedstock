@@ -1,4 +1,4 @@
-{% set version = "0.24.3" %}
+{% set version = "0.24.4" %}
 
 package:
   name: metakernel
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/metakernel/metakernel-{{ version }}.tar.gz
-  sha256: 0e3185a7285ce1e0321379093409a6b01a2cdb14a5ccb35696a77708293f262a
+  sha256: 559413d0564f883a8783e20bc46fce67ef1035b2d08c7f669bb62b399e77ebc8
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -35,7 +35,8 @@ test:
 about:
   home: https://github.com/Calysto/metakernel
   license: BSD 3-Clause
-  summary: 'Metakernel for Jupyter.'
+  license_file: LICENSE.txt
+  summary: Metakernel for Jupyter.
 
 extra:
   recipe-maintainers:
