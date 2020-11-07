@@ -5,11 +5,9 @@ Home: https://github.com/Calysto/metakernel
 
 Package license: BSD 3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/metakernel-feedstock/blob/master/LICENSE.txt)
 
 Summary: Metakernel for Jupyter.
-
-
 
 Current build status
 ====================
