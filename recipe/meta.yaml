@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/Calysto/metakernel
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE.txt
   summary: Metakernel for Jupyter.
 
