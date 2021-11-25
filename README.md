@@ -3,7 +3,7 @@ About metakernel
 
 Home: https://github.com/Calysto/metakernel
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/metakernel-feedstock/blob/master/LICENSE.txt)
 
