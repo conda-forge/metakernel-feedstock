@@ -19,6 +19,7 @@ requirements:
     - pip
     - ipykernel
     - pexpect >=4.2
+    - flit_core
   run:
     - python >=3.6
     - ipykernel
