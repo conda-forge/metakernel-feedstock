@@ -15,16 +15,17 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
-    - ipykernel
-    - pexpect >=4.2
-    - flit_core
+    - flit-core >=3.2,<4
   run:
-    - python >=3.6
-    - ipykernel
+    - ipykernel >5.5.6
+    - jedi >=0.18
+    - jupyter_core >=4.9.2
+    - pexpect >=4.8
+    - python >=3.7
+    # extras
     - ipyparallel
-    - pexpect >=4.2
     - portalocker
 
 test:
