@@ -1,4 +1,4 @@
-{% set version = "0.29.0" %}
+{% set version = "0.29.1" %}
 
 package:
   name: metakernel
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/m/metakernel/metakernel-{{ version }}.tar.gz
-  sha256: f81f32c29eeae3683c1fe04f14af83d55c8b7f2aa09eb6083776a2fe675cc1c0
+  sha256: c7b39495cb14015e67d5f7f9bd5b855a000eb9ede67dad0c22da7728d070a4c5
 
 build:
   number: 0
@@ -15,15 +15,17 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
-    - ipykernel
-    - pexpect >=4.2
+    - flit-core >=3.2,<4
   run:
-    - python >=3.6
-    - ipykernel
+    - ipykernel >5.5.6
+    - jedi >=0.18
+    - jupyter_core >=4.9.2
+    - pexpect >=4.8
+    - python >=3.7
+    # extras
     - ipyparallel
-    - pexpect >=4.2
     - portalocker
 
 test:
