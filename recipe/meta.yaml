@@ -5,17 +5,17 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/m/metakernel/metakernel-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/m/metakernel/metakernel-{{ version }}.tar.gz
   sha256: 4a27dfd853b849f0128242c55204ee597a5a8d864294f26084baf2fbc814d5a4
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - hatchling >=1.5
   run:
@@ -23,12 +23,14 @@ requirements:
     - jedi >=0.18
     - jupyter_core >=4.9.2
     - pexpect >=4.8
-    - python >=3.7
+    - python >={{ python_min }}
     # extras
     - ipyparallel
     - portalocker
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - metakernel
     - metakernel.magics
