@@ -41,7 +41,7 @@ test:
     - metakernel.magics
     - metakernel.utils
   commands:
-    - pytest
+    - pytest tests/
 
 about:
   home: https://github.com/Calysto/metakernel
