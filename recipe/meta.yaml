@@ -35,6 +35,8 @@ test:
     - metakernel.utils
   commands:
     - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/Calysto/metakernel
