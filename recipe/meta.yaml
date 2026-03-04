@@ -31,12 +31,18 @@ requirements:
 test:
   requires:
     - python {{ python_min }}
+    - jupyter_kernel_test
+    - ipywidgets
+    - metakernel_python
+    - pytest
+    - pytest-timeout
+    - requests
   imports:
     - metakernel
     - metakernel.magics
-    - metakernel.magics.tests
-    - metakernel.tests
     - metakernel.utils
+  commands:
+    - pytest
 
 about:
   home: https://github.com/Calysto/metakernel
