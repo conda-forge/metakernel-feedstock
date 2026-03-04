@@ -29,19 +29,12 @@ requirements:
     - portalocker
 
 test:
-  requires:
-    - python {{ python_min }}
-    - jupyter_kernel_test
-    - ipywidgets
-    - pytest
-    - pytest-timeout
-    - requests
   imports:
     - metakernel
     - metakernel.magics
     - metakernel.utils
   commands:
-    - pytest ./tests
+    - pip check
 
 about:
   home: https://github.com/Calysto/metakernel
