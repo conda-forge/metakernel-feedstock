@@ -33,7 +33,6 @@ test:
     - python {{ python_min }}
     - jupyter_kernel_test
     - ipywidgets
-    - metakernel_python
     - pytest
     - pytest-timeout
     - requests
