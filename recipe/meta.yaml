@@ -1,4 +1,4 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.7" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/m/metakernel/metakernel-{{ version }}.tar.gz
-  sha256: 76f2b8926cbad5a089deb6f727399c4e34e8915af97896a8bb7968ebe02da21c
+  url: https://files.pythonhosted.org/packages/source/m/metakernel/metakernel-{{ version }}.tar.gz
+  sha256: 499a0e399e353e0fb4a74e105ea2ad2aed89a15053a299f5fa93c027d721743a
 
 build:
   number: 0
